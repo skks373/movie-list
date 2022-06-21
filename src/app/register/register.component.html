@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Register</h1>
+                </div>
+                <form [formGroup]="registerForm" (ngSubmit)="signUp()">
+                    <div class="form-group">
+                      <label for="inputUsername">Username</label>
+                      <input formControlName="username" type="text" class="form-control" id="inputUsername" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input formControlName="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                      <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
+                      </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top:25px;">Sign Up</button>
+                </form>
+                <a style="color: rgb(0, 0, 0); margin-top:10px; text-decoration:none;"  routerLink="/login">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+</div>
